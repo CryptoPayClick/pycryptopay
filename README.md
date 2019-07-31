@@ -5,11 +5,8 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 [![Supported python versions](https://img.shields.io/pypi/pyversions/aiogram.svg?style=flat-square)](https://pypi.python.org/pypi/cryptopay)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+CryptoPay gives you an opportunity to create donations, as well as the sale of goods, services, and advertising the simplest and cheapest way.
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
 
 # Advantages!
 
