@@ -8,9 +8,6 @@ import requests
 
 from cryptopay.classes import Payment
 
-__version__ = '0.1'
-
-
 
 class Application:
     MAIN_URL = 'http://3.9.215.1:5555'
