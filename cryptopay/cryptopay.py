@@ -28,7 +28,6 @@ class Application:
                 raise ValueError('callback must be callable')
             if iscoroutinefunction(self.callback):
                 self._loop.create_task(self._check_payments_periodic_async())
-                Thread(target=self._loop.run_forever).start()
             else:
                 Thread(target=self._check_payments_periodic).start()
 
@@ -105,13 +104,15 @@ class Application:
     def _on_success_payment(self, payment):
         self._call_callback(payment)
         payment.data['fixed_amount'] = payment.amount
-        del payment.data['donated']
+        if 'donated' in payment.data:
+            del payment.data['donated']
         self.update_payment_data(payment.id, payment.data)
 
     async def _on_success_payment_async(self, payment):
         await self._call_callback_async(payment)
         payment.data['fixed_amount'] = payment.amount
-        del payment.data['donated']
+        if 'donated' in payment.data:
+            del payment.data['donated']
         await self.update_payment_data_async(payment.id, payment.data)
 
     def get_currencies(self):

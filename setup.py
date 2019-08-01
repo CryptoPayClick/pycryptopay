@@ -2,14 +2,14 @@ from distutils.core import setup
 
 setup(
     name='pycryptopay',
-    packages=['pycryptopay'],
-    version='0.1',
+    packages=['cryptopay'],
+    version='0.11',
     license='MIT',
     description='Library that helps you to implement CryptoPay API',
     author='CryptoPay',
     author_email='auth@cryptopay.click',
     url='https://github.com/CryptoPayClick/pycryptopay',
-    download_url='https://github.com/CryptoPayClick/pycryptopay/archive/v0.1.tar.gz',
+    download_url='https://github.com/CryptoPayClick/pycryptopay/archive/v0.11.tar.gz',
     keywords=['crypto', 'cryptocurrency', 'bitcoin', 'eth', 'btc', 'ethereum', 'python'],  # Keywords that define your package best
     install_requires=[
         'aiohttp',
